@@ -256,8 +256,25 @@ cooperatie cancellation は Coroutine がキャンセルしたいときにちゃ
 
 
 ### Suspend関数の話
-読んでる途中なので後で書く。
+第1章は概念的に suspending function が何をしたいのかという話。
+suspending function を呼ぶところでのコード分割という話はステップバイステップで分かりやすいが、以下の部分でちょっとつまづいたが、これはつまり最初のブロックの最後での `b = susB(b)` で b の値が更新されたものを `newB` として次のブロックの引数に入れているということかな？
 
+> 「前のブロックの最後の suspend 関数の結果」を、「次のブロックの引数」として受け取るような変形です。
+
+そして callback は `val block3_2 = ContinuationImpl(block3, callback)` のようにマージした形で呼ばれるようになり、ブロック実行のために `return block1()` を最後のブロックの最後に足す。
+おー分かりやすい。
+
+第2章はまだ曖昧になっている `return block1()` で何を返してるのかと callback を実際誰が呼ぶのか問題を、自動生成されるクラスを見ていくことで理解しようという話。
+suspending function の末尾に足される Continuation とそのサブクラスである ContinuationImpl の解説で、特に自動生成されるクラスの継承元となる ContinuationImpl を厚く解説してくれている。
+
+ContinuationImple の resumeWith メソッドが「invokeSuspend を呼んで COROUTINE_SUSPENDED ならそのまま return で、何かしら値が返ってきたらコンストラクタで渡されていた originalCallback の resumeWith を呼び出す（つまり親の方の処理が再開される）」という働きと理解する。
+この辺は動画見てても実装は分からなかったところなので実に有難い。
+
+invokeSuspend の説明は前のブロックの結果を受け取って、それを（result というフィールドに入れて）渡す、ということで 1 章でやった内容が具体的に見えてくるのが良い。
+ラムダ式でブロック分解されていたところも、実際はラベルを使って when で実装されているという話にもなって、ここまで理解すると動画でさらっと言われてた部分がちゃんと理解できるんだなぁと関心する。
+
+3 章と 4 章はさっと流し読みしただけなのであまりちゃんと理解できていないが、なるほど suspending function とはこういう風になっているのかとちゃんと理解できるように書かれている。
+こういう感じで他の部分、例えば CoroutineContext とかどのスレッドで注目しているコードが実行されるか、が理解できるようになりたいものだ。
 
 ## まとめ
 Kotlin の Coroutine を勉強した際の経過をメモしておいた。
