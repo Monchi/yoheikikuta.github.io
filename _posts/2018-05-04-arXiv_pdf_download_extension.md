@@ -45,7 +45,7 @@ Notability の書き心地にぞっこんなので、このアプリ一本で論
 ### どうしたか？
 Google Chrome の extension を開発して arXiv の論文を簡単に google drive にダウンロードできるようにした。
 使い方の流れは以下：
-- arXiv の abstract または pdf のページで [CMD + SHIFT + A] を押下
+- arXiv の abstract または pdf のページで [CMD + B] を押下
   - これで事前に指定しておいた google drive の directory に `[1406.2661] Generative Adversarial Networks.pdf` みたいな名前で保存される
 - Notability でこの論文を読み込む
   - ここが手動になってしまうのと、一括読み込みを複数回すると同じ pdf が複数個読み込まれてしまう

@@ -15,8 +15,10 @@ categories: ['仕事']
 201902 から無職になって今は沖縄で悠々と花粉フリー生活を送っているが、沖縄に来る前は色んな人に話を聴いて回っていた。
 その時の話をまとめるという話を以前 Twitter で以下のようにしていたので、有言実行伏線（？）回収ということでまとめを書くことにする。
 
+<div align="center">
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">今月は結構頑張ったので、のべ27人（含む無職）に話を聴きに行ったという結果になった。話をしてくれたみなさんありがとうございました、楽しかったです。<br><br>（話を聴きに行った時に口外していいか聞かなかったので）個別の話は書けないですが、もう少し自分の中で整理してまとめ的なのを書く予定です。</p>&mdash; Yohei KIKUTA (@yohei_kikuta) <a href="https://twitter.com/yohei_kikuta/status/1098903307639173120?ref_src=twsrc%5Etfw">2019年2月22日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 この Tweet でも言っているように個別にブログに書いてもよいという許諾は取ってないので、具体的な人名や会社名は出さずに色々聴いて考えた結果の幾分抽象的な話をしたいと思う。
 

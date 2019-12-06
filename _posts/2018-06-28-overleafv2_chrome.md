@@ -31,8 +31,10 @@ categories: ['env development']
 喜び勇んで使い始めたが、Chrome だと半角文字を使うことでエディタのカーソルがズレるという厳しいバグがあった。
 人のツイートを引用させてもらうがこんな感じ。
 
+<div align="center">
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="en" dir="ltr">This is how it looks like (as of today). <a href="https://t.co/rFDiwp4lcu">pic.twitter.com/rFDiwp4lcu</a></p>&mdash; ねぎぼ (@f_negibozu) <a href="https://twitter.com/f_negibozu/status/1008265075768025088?ref_src=twsrc%5Etfw">2018年6月17日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 ブラウザを変えるという workaround があるとのことだったが、さすがにこのためにブラウザを変えるのはしんどい。
 自分でもサポートにバグレポートを投げたところ、再現はできないがフォントを変えるような Chrome Extension とかが悪さをしている可能性あり、という話だった。
