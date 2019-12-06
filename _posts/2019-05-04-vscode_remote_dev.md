@@ -25,7 +25,7 @@ VSCode がサポートしてくれれば嬉しいなぁと思って過ごして�
 
 
 ### 前準備
-ホストのマシンは macOS Moajave Version 10.14.4 で試している。
+ホストのマシンは macOS Mojave Version 10.14.4 で試している。
 
 preview なので、実行には VSCode Insiders が必要である（[VSCode Insiders のダウンロードページ](https://code.visualstudio.com/insiders/)）。
 試すには以下の preview の拡張をインストールする必要あり。
@@ -55,7 +55,7 @@ container で Python の hello world を実行して、それを VSCode のデ�
 軽く眺めると、ローカルのワークスペースの path だったり requirements.txt.temp（これは temp ということで空なので必要なものは自分で準備）だったりが生えていて、それらを元に必要な docker container を作ってくれるようになっている。
 これは自分用のを作るのも難しくなさそうやね。
 
-この `.devcontainer` があるワークスペースを VSCode がよしなに解釈して自動的にに container を作って、その中の環境で VSCode を使った作業ができるようにしてくれる。
+この `.devcontainer` があるワークスペースを VSCode がよしなに解釈して自動的に container を作って、その中の環境で VSCode を使った作業ができるようにしてくれる。
 新しく作った場合は reload するかというポップアップが出るのでそれで reload すればよい。
 ということで reload すると docker image をビルドするのでいくらか時間が掛かり、首尾よく進むと以下のような画面になる（ここでは例として `test.py` というファイルを作って編集している）。
 
