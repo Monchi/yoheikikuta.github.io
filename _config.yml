@@ -96,4 +96,4 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /images/omega.png
+      image: /images/omega.jpg
