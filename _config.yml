@@ -90,3 +90,10 @@ exclude:
 twitter:
   username: yohei_kikuta
   card: summary
+
+# Default setting of image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/omega.png
