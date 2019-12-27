@@ -86,7 +86,7 @@ exclude:
   - README.md
   - CNAME
 
-  # SEO tags
-  twitter:
-    username: yohei_kikuta
-    card: summary
+# SEO tags
+twitter:
+  username: yohei_kikuta
+  card: summary
