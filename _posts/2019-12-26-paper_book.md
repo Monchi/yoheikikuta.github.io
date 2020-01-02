@@ -1,7 +1,7 @@
 ---
 layout: post
 title: やっぱり学術書は紙の書籍が良い、というお話
-categories: ['その他']
+categories: ['雑談']
 ---
 
 
