@@ -22,12 +22,12 @@ categories: ['programming']
 ### 諸々のインストール
 自分が使ってる Node と npm のバージョンは以下。
 
-```bash
+```
 $ node -v
 v15.9.0
 ```
 
-```bash
+```
 $ npm -v
 7.5.3
 ```
@@ -35,13 +35,13 @@ $ npm -v
 npm で必要なパッケージをインストールする。
 TypeScript とか TSLint とかも入ってるけどそこはまあよしなに。
 
-```bash
+```
 $ npm install -g typescript tslint @google/clasp @types/google-apps-script
 ```
 
 自分が使っているのは以下のバージョンになっている。
 
-```bash
+```
 $ npm list -g
 /Users/yoheikikuta/.npm-global/lib
 ├── @google/clasp@2.3.0
@@ -58,7 +58,7 @@ $ npm list -g
 ### 開発のためのセットアップ
 適当にディレクトリ（ここでは `sample` とする）を掘って `npm init` などをする（yarn がよかったらよしなに読み替える）。
 
-```bash
+```
 $ mkdir sample
 $ cd sample
 $ npm init -y
@@ -70,7 +70,7 @@ $ tslint --init
 各種コマンドに関しては [https://github.com/google/clasp](https://github.com/google/clasp) を見ればいいんだけど、ここでは script project のタイトルと root directory を設定している。
 後者を設定しておくとこの root directory に置いてあるものだけが push したときにスクリプトエディタに送られて便利なので設定しておくのがよい（これを設定しない場合は不必要なファイルを push しないように `./.claspignore` を作る必要がある）。
 
-```bash
+```
 $ clasp create --title "sample-title" --rootDir ./src 
 ? Create which script? standalone
 ```
@@ -89,7 +89,7 @@ function test(): void {
 このファイルを以下のコマンドで Google Drive に push する。`./src/` 以下のファイルが push される。  
 このときに `.ts` ファイルが `.gs` ファイルにトランスパイルされて、GAS として実行できるようになる。
 
-```bash
+```
 $ clasp push
 └─ src/appsscript.json
 └─ src/sample.ts
@@ -98,7 +98,7 @@ $ clasp push
 push されたファイルは GAS として Google Drive に保存される。
 GAS をスクリプトエディタ（script.google.com）で開くには以下を実行する。
 
-```bash
+```
 $ clasp open
 ```
 
@@ -149,6 +149,7 @@ GCP プロジェクトと連携するにはスクリプトエディタで `プ�
 
 実行可能 API として公開するには、スクリプトエディタの `デプロイ > 新しいデプロイ` において `実行可能API` としてアクセスできるユーザをお望みのものに設定した上でデプロイする。
 この段階で `clasp pull` すると `./src/appsscript.json` に executionAPI が追加されることが確認できる。
+
 ```json
 {
   "timeZone": "America/New_York",
@@ -169,7 +170,7 @@ GCP のプロジェクトで `APIとサービス > ライブラリ` で `Apps Sc
 この認証情報を使いローカルでログインし直してブラウザで認証を実施する。
 このとき `? What is your GCP projectId?` と聞かれるので GCP のプロジェクト ID を入力する。
 
-```bash
+```
 $ clasp login --creds creds.json 
 ```
 
@@ -192,7 +193,7 @@ No response.
 ログは GCP の Cloud Logging で管理されている。
 clasp のコマンドでローカルでも確認できるようになっている。
 
-```bash
+```
 $ clasp logs
 ```
 
