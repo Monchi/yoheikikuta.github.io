@@ -37,7 +37,7 @@ categories: ['雑談']
 どちらにせよ今回は医療費控除が発生するほど医療費使ってないので、連携ができたという以上の深入りはしてない。
 
 あとは e-Tax でスマホからできるよってアピールが強くなってた気がした。
-M1 Mac とかで問題なくできるのかな？という懸念は少しあったが、問題なくできたので試してない。
+M1 Mac とかで問題なくできるのかなという懸念があったのでうまくいかなかったらスマホで試してみようとも思ったが、問題なくできたので試してない。
 
 そんなもんかな。
 昨年は副業をあまりやってないので経費とするものもほとんど発生しないし、作業はサクッと終わった。
@@ -45,7 +45,7 @@ M1 Mac とかで問題なくできるのかな？という懸念は少しあっ�
 
 ## M1 Mac から e-Tax
 マイナンバーカードの読み込みがうまくいかないかも、的な警告を目にした気がしたが、結果的に自分は問題なくできた。
-ただし Chrome ではできないので、Safari で処理をした。
+ただし Chrome は対応していないので、Safari で処理をした。
 
 - Safari: Version 14.1.2
 - IC カードリーダ: NTT ACR39-NTTCom [https://www.ntt.com/business/services/application/authentication/jpki/download6.html](https://www.ntt.com/business/services/application/authentication/jpki/download6.html)
